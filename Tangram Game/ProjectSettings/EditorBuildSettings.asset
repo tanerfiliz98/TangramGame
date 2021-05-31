@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Hard/Hard3.unity
     guid: 4752112dca28e6f4086fcfca2679bb70
+  - enabled: 1
+    path: Assets/Scenes/Levels/Levels.unity
+    guid: 0e4eb9fe5e2c34b41a0708a37771ba83
+  - enabled: 1
+    path: Assets/Scenes/CreditsScreen.unity
+    guid: 77f2db9500dc45b4abc15fe25b4450c0
+  - enabled: 1
+    path: Assets/Scenes/HowToPlayScreen.unity
+    guid: 932adeabb88d2da448068c089edd0270
   m_configObjects: {}
