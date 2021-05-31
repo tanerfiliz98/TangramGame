@@ -13,7 +13,7 @@ public class PolygonMove : MonoBehaviour
     Collider2D lockObj;
     public Text puan;
     public int TotalPieceNumber;
-    public string NextLevelName;
+    public GameObject LevelCompleteUi;
 
     private void collisonCheck(Collider2D col)
     {
@@ -98,12 +98,26 @@ public class PolygonMove : MonoBehaviour
             int p;
             int.TryParse(puan.text,out p);
             p++;
-            if (p>=TotalPieceNumber)
+            if (p >= TotalPieceNumber)
             {
-                SceneManager.LoadScene(NextLevelName);
+                NextScreen();
             }
             puan.text = p.ToString();
         }
 
+    }
+    private void NextScreen()
+    {
+        int levelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        int saveLevelIndex = PlayerPrefs.GetInt("SaveLevelIndex");
+        if (levelIndex > saveLevelIndex && levelIndex != 11)
+        {
+            PlayerPrefs.SetInt("SaveLevelIndex", levelIndex);
+        }
+        else if (levelIndex == 11)
+        {
+            PlayerPrefs.SetInt("SaveLevelIndex", 10);
+        }
+        LevelCompleteUi.SetActive(true);
     }
 }

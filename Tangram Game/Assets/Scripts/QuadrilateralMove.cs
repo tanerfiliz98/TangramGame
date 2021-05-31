@@ -15,7 +15,7 @@ public class QuadrilateralMove : MonoBehaviour
     public int DegreeOfRotation;
     public Text puan;
     public int TotalPieceNumber;
-    public string NextLevelName;
+    public GameObject LevelCompleteUi;
     private void collisonCheck(Collider2D col)
     {
         if (col.gameObject.name == gameObject.name + "1")
@@ -112,10 +112,24 @@ public class QuadrilateralMove : MonoBehaviour
             p++;
             if (p >= TotalPieceNumber)
             {
-                SceneManager.LoadScene(NextLevelName);
+                NextScreen();
             }
             puan.text = p.ToString();
         }
 
+    }
+    private void NextScreen()
+    {
+        int levelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        int saveLevelIndex = PlayerPrefs.GetInt("SaveLevelIndex");
+        if (levelIndex > saveLevelIndex && levelIndex != 11)
+        {
+            PlayerPrefs.SetInt("SaveLevelIndex", levelIndex);
+        }
+        else if (levelIndex == 11)
+        {
+            PlayerPrefs.SetInt("SaveLevelIndex", 10);
+        }
+        LevelCompleteUi.SetActive(true);
     }
 }
