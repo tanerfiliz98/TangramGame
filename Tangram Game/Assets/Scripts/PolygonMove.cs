@@ -103,7 +103,6 @@ public class PolygonMove : MonoBehaviour
                 SceneManager.LoadScene(NextLevelName);
             }
             puan.text = p.ToString();
-            Debug.Log(puan.text);
         }
 
     }
