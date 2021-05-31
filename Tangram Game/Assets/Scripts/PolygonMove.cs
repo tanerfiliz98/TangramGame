@@ -85,7 +85,7 @@ public class PolygonMove : MonoBehaviour
         GetComponent<SpriteRenderer>().sortingOrder--;
         if (pieceStatusLock)
         {
-            
+            GetComponent<SpriteRenderer>().sortingOrder--;
             transform.position = lockObj.transform.position;
             if (gameObject.GetComponent<Collider2D>() != null)
             {

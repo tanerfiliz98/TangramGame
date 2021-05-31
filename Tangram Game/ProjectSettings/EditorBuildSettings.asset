@@ -8,4 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScreen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Levels/Easy/Easy1.unity
+    guid: 80a34bbb5acd51e4cb7fe11166fcae82
+  - enabled: 1
+    path: Assets/Scenes/Levels/Easy/Easy2.unity
+    guid: 862cb3ab36e291b4e9ab4e2f3c241beb
+  - enabled: 1
+    path: Assets/Scenes/Levels/Easy/Easy3.unity
+    guid: ca1ba756db2f3564bbb25e0cb4a77766
+  - enabled: 1
+    path: Assets/Scenes/Levels/Normal/Normal1.unity
+    guid: 41c0ceeb4eb7dde41b9d43fae2efd008
+  - enabled: 1
+    path: Assets/Scenes/Levels/Normal/Normal2.unity
+    guid: 29aec73a0685d9d4f939607116e23746
+  - enabled: 1
+    path: Assets/Scenes/Levels/Normal/Normal3.unity
+    guid: 52056719ba503184cada1a6721e157f3
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hard/Hard1.unity
+    guid: 417888c5d9b9fcf47b6e14889a130840
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hard/Hard2.unity
+    guid: d74cffe4ec5a4554f87e8c9475d3cb76
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hard/Hard3.unity
+    guid: 4752112dca28e6f4086fcfca2679bb70
   m_configObjects: {}

@@ -96,6 +96,7 @@ public class QuadrilateralMove : MonoBehaviour
         GetComponent<SpriteRenderer>().sortingOrder--;
         if (pieceStatusLock)
         {
+            GetComponent<SpriteRenderer>().sortingOrder--;
             transform.position = lockObj.transform.position;
             transform.rotation = lockObj.transform.rotation;
             if (gameObject.GetComponent<Collider2D>() != null)
