@@ -1143,7 +1143,7 @@ MonoBehaviour:
   DegreeOfRotation: 90
   puan: {fileID: 1514890666}
   TotalPieceNumber: 7
-  NextLevelName: Normal3
+  NextLevelName: Normal1
 --- !u!50 &1074581840
 Rigidbody2D:
   serializedVersion: 4
@@ -1662,7 +1662,7 @@ MonoBehaviour:
   DegreeOfRotation: 180
   puan: {fileID: 1514890666}
   TotalPieceNumber: 7
-  NextLevelName: Normal3
+  NextLevelName: Normal1
 --- !u!50 &1535984196
 Rigidbody2D:
   serializedVersion: 4
